@@ -21,4 +21,7 @@ class EmployeeTestSuccess {
         assertEquals("Conor", myEmployee.getName());
     }
 
+    @Test
+    void testPpsIdSuccess() {assertEquals("1234567891011", myEmployee.getPpsId());}
+
 }

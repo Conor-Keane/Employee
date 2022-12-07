@@ -18,6 +18,7 @@ public class Employee {
     public String getName() {
         return name;
     }
+    public String getPpsId() { return ppsId; }
 
     public void setName(String name) {
         this.name = name;
