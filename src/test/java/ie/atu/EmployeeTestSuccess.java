@@ -24,4 +24,7 @@ class EmployeeTestSuccess {
     @Test
     void testPpsIdSuccess() {assertEquals("1234567891011", myEmployee.getPpsId());}
 
+    @Test
+    void testEmploymentType() { assertEquals("Full-time", myEmployee.getEmploymentType());}
+
 }
