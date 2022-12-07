@@ -11,7 +11,7 @@ public class Employee {
         setName(name);
         setPpsId(ppsId);
         setEmploymentType(employmentType);
-        this.gender = gender;
+        setGender = (gender);
         this.age = age;
     }
 
@@ -20,6 +20,7 @@ public class Employee {
     }
     public String getPpsId() { return ppsId; }
     public String getEmploymentType() { return employmentType; }
+    public String getGender() { return gender; }
 
     public void setName(String name) {
         this.name = name;
@@ -30,4 +31,6 @@ public class Employee {
     }
 
     public void setPpsId(String ppsId) { this.ppsId = ppsId; }
+
+    public void setGender(String gender) { this.gender = gender;}
 }
