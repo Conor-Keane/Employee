@@ -11,7 +11,7 @@ public class Employee {
         setName(name);
         setPpsId(ppsId);
         setEmploymentType(employmentType);
-        setGender = (gender);
+        setGender(gender);
         this.age = age;
     }
 
