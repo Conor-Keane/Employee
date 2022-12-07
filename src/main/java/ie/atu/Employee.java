@@ -9,7 +9,7 @@ public class Employee {
 
     public Employee(String name, String ppsId, String employmentType, String gender, int age) {
         setName(name);
-        this.ppsId = ppsId;
+        setPpsId(ppsId);
         this.employmentType = employmentType;
         this.gender = gender;
         this.age = age;
@@ -22,4 +22,6 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setPpsId(String ppsId) { this.ppsId = ppsId; }
 }
