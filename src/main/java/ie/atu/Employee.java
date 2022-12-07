@@ -28,13 +28,17 @@ public class Employee {
     }
 
     public void setEmploymentType(String employmentType) {
-        this.employmentType = employmentType;
+        if("Full-time".equalsIgnoreCase(employmentType) || "Part-time".equalsIgnoreCase(employmentType) || "Contract".equalsIgnoreCase(employmentType)){
+            this.employmentType = employmentType;
+        }
+        else {
+            throw new IllegalArgumentException("Enter Part-time, Full-time or Contract, make sure to have the - for example, between part and time");
+        }
     }
 
     public void setPpsId(String ppsId) { this.ppsId = ppsId; }
 
     public void setGender(String gender) { this.gender = gender;}
 
-    public void setAge(int age) {this.age = age;}
-
+    public void setAge(int age) { this.age = age; }
 }
