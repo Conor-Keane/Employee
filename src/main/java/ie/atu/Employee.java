@@ -8,10 +8,18 @@ public class Employee {
     private int age;
 
     public Employee(String name, String ppsId, String employmentType, String gender, int age) {
-        this.name = name;
+        setName(name);
         this.ppsId = ppsId;
         this.employmentType = employmentType;
         this.gender = gender;
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
