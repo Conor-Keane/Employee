@@ -27,4 +27,7 @@ class EmployeeTestSuccess {
     @Test
     void testEmploymentType() { assertEquals("Full-time", myEmployee.getEmploymentType());}
 
+    @Test
+    void testGenderType() { assertEquals("Male", myEmployee.getGender()); }
+
 }
