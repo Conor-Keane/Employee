@@ -30,4 +30,7 @@ class EmployeeTestSuccess {
     @Test
     void testGenderType() { assertEquals("Male", myEmployee.getGender()); }
 
+    @Test
+    void testAge() { assertEquals(21, myEmployee.getAge());}
+
 }
