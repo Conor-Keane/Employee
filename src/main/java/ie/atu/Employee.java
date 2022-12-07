@@ -24,7 +24,7 @@ public class Employee {
     public int getAge() { return age; }
 
     public void setName(String name) {
-        this.name = name;
+        this.name= name;
     }
 
     public void setEmploymentType(String employmentType) {
@@ -38,7 +38,21 @@ public class Employee {
 
     public void setPpsId(String ppsId) { this.ppsId = ppsId; }
 
-    public void setGender(String gender) { this.gender = gender;}
+    public void setGender(String gender) {
+        if("Male".equalsIgnoreCase(employmentType) || "Female".equalsIgnoreCase(employmentType) || "Non-Binary".equalsIgnoreCase(employmentType)){
+            this.employmentType = employmentType;
+        }
+        else {
+            throw new IllegalArgumentException("Male, Female or non-binary, make sure to have the - for example, non-Binary");
+        }
+    }
 
-    public void setAge(int age) { this.age = age; }
+    public void setAge(int age) {
+        if(age > 15 || age < 66) {
+            this.age = age;
+        }
+        else {
+            throw new IllegalArgumentException("Must be over 16 and under 66");
+        }
+    }
 }
